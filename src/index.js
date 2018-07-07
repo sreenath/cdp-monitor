@@ -27,7 +27,7 @@ function getData() {
       data: {
         query: `query 
         { 
-          getCup(id: 2442) { 
+          getCup(id: ${currentCup}) { 
             id
             ratio
             art
@@ -37,12 +37,10 @@ function getData() {
         }`
       }
     }).then((result) => {
-      outputData = result.data.data.getCup;
-      console.log(outputData.ratio);
-      document.getElementById('collateralization-ratio').innerHTML = outputData.ratio;
+      let outputData = result.data.data.getCup;
+      document.getElementById('collateralization-ratio').innerHTML = Number(outputData.ratio).toFixed(4) + '%';
       let liquidationPrice = ((outputData.art * 1.5) / (outputData.ink * outputData.per));
-      console.log(liquidationPrice);
-      document.getElementById('liquidation-price').innerHTML = liquidationPrice;
+      document.getElementById('liquidation-price').innerHTML = Number(liquidationPrice).toFixed(4);
     });
   }
 }
