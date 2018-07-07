@@ -4,7 +4,12 @@ body {
   padding: 10px;
 }
 
-/* input {
-  border: 2px;
-  color: brown;
-} */
+.CDP-info {
+  padding: 20px;
+  margin: 2px;
+}
+
+.CDP-info label {
+  font-weight: bold;
+  color: blue;
+}

@@ -9,7 +9,6 @@ const openCDPPageElement = document.getElementById('openCDP');
 
 updateCup.addEventListener('click', function(event) {
   currentCup= document.getElementById('inputCUP').value;
-  document.getElementById('cupID').innerHTML = currentCup;
   getData();
   clearInterval(interval);
   interval = setInterval(getData, 30000);
@@ -41,6 +40,7 @@ function getData() {
       }
     }).then((result) => {
       let outputData = result.data.data.getCup;
+      document.getElementById('cupID').innerHTML = Number(outputData.id);
       document.getElementById('collateralization-ratio').innerHTML = Number(outputData.ratio).toFixed(4) + '%';
       let liquidationPrice = ((outputData.art * 1.5) / (outputData.ink * outputData.per));
       document.getElementById('liquidation-price').innerHTML = Number(liquidationPrice).toFixed(4);
