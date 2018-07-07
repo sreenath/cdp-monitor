@@ -5,19 +5,25 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>MakerDAO</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="../assets/css/index.css">
 </head>
 <body>
-  <div class="user-input">
-      <input type="text" id="cupID"></input>
-      <button id="openCDP">Open CDP Page</button>
-      <button id="updateCup" type="submit">Update CDP</button>
-  </div>
-
-  <div class="CDP-info">
-    <h1 id="cup-id">239</h1>
-    <p id="liquidation-price">239.239</p>
-    <p id="collateralization-ratio">23.92%</p>
-    <button id="open-cdp">Open CDP Page</button>
+  <div class="container">
+    <div class="input-group mb-3">
+      <div class="input-group-prepend">
+        <span class="input-group-text" id="basic-addon1">CDP ID</span>
+      </div>
+      <input type="text" class="form-control" placeholder="Enter CDP ID" id="inputCUP" aria-describedby="basic-addon1">
+    </div>
+    <button class="btn btn-primary" id="openCDP">Open CDP Page</button>
+    <button class="btn btn-primary" id="updateCup" type="submit">Update CDP</button>
+        
+    <div class="CDP-info">
+      <h1 id="cupID">239</h1>
+      <p id="liquidation-price">239.239</p>
+      <p id="collateralization-ratio">23.92%</p>
+    </div>
   </div>
   <script src="index.js"></script>
 </body>
