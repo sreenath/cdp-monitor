@@ -1,0 +1,18 @@
+{
+  "name": "makerdao",
+  "version": "1.0.0",
+  "description": "An electron application for CDP Monitoring",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://source.deco.network/sreenathtv/entry-hacksummit-MakerDAO.git"
+  },
+  "author": "Sreenath.Vadakkeveettil",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "2.0.4"
+  }
+}
