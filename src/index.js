@@ -37,8 +37,12 @@ function getData() {
         }`
       }
     }).then((result) => {
-      outputData = result.data.data
-      console.log(outputData.getCup.ink)
+      outputData = result.data.data.getCup;
+      console.log(outputData.ratio);
+      document.getElementById('collateralization-ratio').innerHTML = outputData.ratio;
+      let liquidationPrice = ((outputData.art * 1.5) / (outputData.ink * outputData.per));
+      console.log(liquidationPrice);
+      document.getElementById('liquidation-price').innerHTML = liquidationPrice;
     });
   }
 }
