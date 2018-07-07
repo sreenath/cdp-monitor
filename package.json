@@ -4,7 +4,10 @@
   "description": "An electron application for CDP Monitoring",
   "main": "main.js",
   "scripts": {
-    "start": "electron ."
+    "start": "electron .",
+    "package-mac": "electron-packager . --overwrite --platform=darwin --arch=x64 --icon=assets/icons/mac/icon.icns --prune=true --out=release-builds",
+    "package-win": "electron-packager . makerdao --overwrite --asar=true --platform=win32 --arch=ia32 --icon=assets/icons/win/icon.ico --prune=true --out=release-builds --version-string.ProductName=\"MakerDAO\"",    
+    "package-linux": "electron-packager . makerdao --overwrite --asar=true --platform=linux --arch=x64 --icon=assets/icons/linux/icon.png --prune=true --out=release-builds"
   },
   "repository": {
     "type": "git",
@@ -13,7 +16,8 @@
   "author": "Sreenath.Vadakkeveettil",
   "license": "ISC",
   "devDependencies": {
-    "electron": "2.0.4"
+    "electron": "2.0.4",
+    "electron-packager": "^12.1.0"
   },
   "dependencies": {
     "axios": "^0.18.0"
