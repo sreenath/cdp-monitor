@@ -6,15 +6,18 @@ This application is developed using Electron and is capable of displaying the cu
 User can choose the CDP using its ID and the app allows user to check its liquidation price and Collateralization ratio real time. Also, it allows user
 to open the specific CDP page. 
 
-Execution instruction:
+**Execution instruction:**
 After checking out the code, simply run :
   npm install && npm start
 
 This will start the electron application and user can follow the instructions from UI
 
-Instructions for creating packages:
+**Instructions for creating packages:**
+
 Windows: npm run package-win
+
 Mac: npm run package-mac
+
 Linux: npm run package-linux
 
 Once you have pacakage available, simply double click on the corresponding package file, it will start the desktop application
