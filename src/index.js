@@ -2,6 +2,7 @@ const shell = require('electron').shell;
 const axios = require('axios');
 
 var currentCup;
+var interval;
 
 const updateCup = document.getElementById('updateCup');
 const openCDPPageElement = document.getElementById('openCDP');
@@ -10,6 +11,8 @@ updateCup.addEventListener('click', function(event) {
   currentCup= document.getElementById('inputCUP').value;
   document.getElementById('cupID').innerHTML = currentCup;
   getData();
+  clearInterval(interval);
+  interval = setInterval(getData, 30000);
 })
 
 openCDPPageElement.addEventListener('click', function() {
