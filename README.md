@@ -8,7 +8,6 @@ to open the specific CDP page.
 
 Running instruction:
 After checking out the code, simply run :
-  npm install
-  npm start
+  npm install && npm start
 
 This will start the electron application and user can follow the instructions from UI
