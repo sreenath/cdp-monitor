@@ -1,14 +1,14 @@
 MakerDAO is a decentralized organization dedicated to bringing stability to the crypto economy through Dai, the world's first stablecoin on the Ethereum blockchain. Dai is an asset-backed hard currency that addresses the crypto economy’s problems of volatility with a secure and transparent smart contract platform of permission-less loans.
 
-Cross Platform Tray Application for CDP Monitoring:
-This application is developed using Electron and is capable of displaying the current health of a specific CDP
+**Cross Platform Tray Application for CDP Monitoring:**
+This application is developed using Electron and can be used to monitor the liquidation price and collateralization ratio of any CDP real time. If a user want to see additional information regarding the CDP, there is a button labelled "Open CDP Page", on clicking which will open the corresponding CDP page. This application is also capable of triggering alert/desktop notification when liquidation price reaches above the user set target price. 
 
-User can choose the CDP using its ID and the app allows user to check its liquidation price and Collateralization ratio real time. Also, it allows user
-to open the specific CDP page. 
 
 **Execution instruction:**
 After checking out the code, simply run :
-  npm install && npm start
+  npm install
+  
+  npm start
 
 This will start the electron application and user can follow the instructions from UI
 
@@ -20,4 +20,9 @@ Mac: npm run package-mac
 
 Linux: npm run package-linux
 
-Once you have pacakage available, simply double click on the corresponding package file, it will start the desktop application
+Once you have pacakage available, simply double click on the corresponding executable file, it will start the desktop application.
+
+**Known Issue: **
+
+Desktop Notification does not work in windows due to an existing issue in electron - [Issue-10684(https://github.com/electron/electron/issues/10864)
+
