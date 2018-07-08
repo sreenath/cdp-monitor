@@ -6,6 +6,7 @@ This application is developed using Electron and can be used to monitor the liqu
 
 **Execution instruction:**
 After checking out the code, simply run :
+
   npm install
   
   npm start
@@ -22,7 +23,8 @@ Linux: npm run package-linux
 
 Once you have pacakage available, simply double click on the corresponding executable file, it will start the desktop application.
 
+
 **Known Issue: **
 
-Desktop Notification does not work in windows due to an existing issue in electron - [Issue-10684(https://github.com/electron/electron/issues/10864)
+Desktop Notification does not work in windows due to an existing issue in electron - [issue-10684](https://github.com/electron/electron/issues/10864)
 
