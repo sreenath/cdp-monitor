@@ -1,7 +1,11 @@
 body {
-  background: #DFDFDF;
-  color: #000;
+  background: #1A1A1D;
+  color: #6F2232;
   padding: 10px;
+}
+
+button {
+  background-color: #950740;
 }
 
 .CDP-info {
@@ -11,5 +15,5 @@ body {
 
 .CDP-info label {
   font-weight: bold;
-  color: blue;
+  color: #C3073F;
 }
