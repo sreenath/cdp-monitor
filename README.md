@@ -24,7 +24,17 @@ Linux: npm run package-linux
 Once you have pacakage available, simply double click on the corresponding executable file, it will start the desktop application.
 
 
-**Known Issue: **
+**Known Issue:**
 
 Desktop Notification does not work in windows due to an existing issue in electron - [issue-10684](https://github.com/electron/electron/issues/10864)
 
+
+**Screenshots:**
+
+![Initial Page](https://source.deco.network/sreenathtv/entry-hacksummit-MakerDAO/src/branch/master/assets/screenshots/Initial_page.png)
+
+![CDP Data displayed](https://source.deco.network/sreenathtv/entry-hacksummit-MakerDAO/src/branch/master/assets/screenshots/CDP%20display.png)
+
+![Create Alert Dialog](https://source.deco.network/sreenathtv/entry-hacksummit-MakerDAO/src/branch/master/assets/screenshots/Create%20Alert.png)
+
+![Alert Displayed](https://source.deco.network/sreenathtv/entry-hacksummit-MakerDAO/src/branch/master/assets/screenshots/Alert%20display.png)
