@@ -14,8 +14,11 @@
   <p class="notify">Notify me when Liquidation Price reaches</p>
 
   <div class="row2">
-    <div>
-      <input id="notifyVal" type="text" placeHolder="Price" />
+    <div class="input-group mb-3">
+      <div class="input-group-prepend">
+        <span class="input-group-text" id="basic-addon2">Target Price</span>
+      </div>
+      <input type="text" class="form-control" placeholder="Enter target price" id="notifyVal" aria-describedby="basic-addon2">
     </div>
     <button class="btn" id="updateBtn">Update</button>
   </div>

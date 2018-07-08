@@ -25,19 +25,39 @@
       <label>Collateralization Ratio</label><p id="collateralization-ratio"></p>
     </div>
 
-    <div class="alert row">
-      <div id="price-container">
-        <p class="subtext">Current Liquidation Price</p>
-        <h1 id="price">Loading...</h1>
+    <div class="alert">
+      <div class="row" id="alert-title">
+        <div class="col-md-4"></div>
+        <div class="col-md-4">
+          <h3>Create Alert</h1>
+        </div>
+        <div class="col-md-4"></div>
       </div>
-      <div id="goal-container">
-        <p><img src="../assets/images/up.svg"><span id="targetPrice">Choose a Target Price</span></p>
+      <div class="row">
+        <div class="col-md-4" id="price-container-label">
+          <p class="subtext">Current Liquidation Price</p>
+        </div>
+        <div class="col-md-4" id="goal-container-label">
+          <p class="subtext">Target Value</p>
+        </div>
+        <div class="col-md-4" id="right-container">
+        </div>
       </div>
-      <div id="right-container">
-        <button class="btn" id="notifyBtn">Notify me when...</button>
+      <div class="row">
+          <div class="col-md-4" id="price-container-value">
+            <p id="price">Loading...</p>
+          </div>
+          <div class="col-md-1" id="goal-container-symbol">
+            <img class="img-fluid" src="../assets/images/up.svg">
+          </div>
+          <div class="col-md-3" id="goal-container-value">
+              <p><span id="targetPrice">Choose a Target Price</span></p>
+          </div>
+          <div class="col-md-4" id="right-container">
+            <button class="btn" id="notifyBtn">Notify me when...</button>
+          </div>
       </div>
     </div>
-
   </div>
   <script src="index.js"></script>
 </body>

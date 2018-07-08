@@ -8,6 +8,15 @@ button {
   background-color: #950740;
 }
 
+.alert {
+  color: white;
+  border: 2px solid white;
+}
+
+#alert-title {
+  justify-content: center;
+}
+
 .CDP-info {
   padding: 20px;
   margin: 2px;
