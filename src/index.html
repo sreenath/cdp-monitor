@@ -19,11 +19,38 @@
     <button class="btn" id="openCDP">Open CDP Page</button>
     <button class="btn" id="updateCup" type="submit">Update CDP</button>  
 
-    <div class="CDP-info">
-      <label>CDP ID</label><h1 id="cupID"></h1>
-      <label>Liquidation Price</label><p id="liquidation-price"></p>
-      <label>Collateralization Ratio</label><p id="collateralization-ratio"></p>
+    <br />
+
+    <div class="CDP-info container-fluid">
+      <div class="row">
+        <div class="label column col-md-4">
+          <label>CDP ID</label>
+        </div>
+        <div class="column col-md-8">
+          <p id="cupID"></p>
+        </div>
+      </div>
+      
+      <div class="row">
+        <div class="label column col-md-4">
+          <label>Liquidation Price</label>
+        </div>
+        <div class="column col-md-8">
+          <p id="liquidation-price"></p>
+        </div>
+      </div>
+      
+      <div class="row">
+        <div class="label col-md-4">
+          <label>Collateralization Ratio</label>
+        </div>
+        <div class="col-md-8">
+          <p id="collateralization-ratio"></p>
+        </div>
+      </div>  
     </div>
+
+    <br />
 
     <div class="alert container-fluid">
       <h4 style="text-align: center">Create Alert</h4>
@@ -49,7 +76,7 @@
               <p><span id="targetPrice">Choose a Target Price</span></p>
           </div>
           <div class="col-md-4" id="right-container">
-            <button class="btn" id="notifyBtn">Notify me when...</button>
+            <button class="btn" id="notifyBtn">Notify me</button>
           </div>
       </div>
     </div>

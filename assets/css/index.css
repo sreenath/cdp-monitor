@@ -13,6 +13,23 @@ button {
   border: 2px solid white;
 }
 
+/* .CDP-info {
+  border: 1px solid white;
+} */
+
+.CDP-info .row {
+  margin-top: 2px;
+  padding: 2px;
+}
+
+.CDP-info .column {
+  border-bottom: 1px solid white;
+}
+
+.CDP-info .label {
+  border-right: 1px solid white;
+}
+
 hr {
   border: 1px solid whitesmoke;
 }
