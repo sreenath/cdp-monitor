@@ -31,10 +31,11 @@ Desktop Notification does not work in windows due to an existing issue in electr
 
 **Screenshots:**
 
-[Initial Page](https://source.deco.network/sreenathtv/entry-hacksummit-MakerDAO/src/branch/master/assets/screenshots/Initial_page.png)
+[Initial Page](https://raw.githubusercontent.com/sreenath/cdp-monitor/master/assets/screenshots/Initial_page.png)
 
-[CDP Data displayed](https://source.deco.network/sreenathtv/entry-hacksummit-MakerDAO/src/branch/master/assets/screenshots/CDP%20display.png)
 
-[Create Alert Dialog](https://source.deco.network/sreenathtv/entry-hacksummit-MakerDAO/src/branch/master/assets/screenshots/Create%20Alert.png)
+[CDP Data displayed](https://github.com/sreenath/cdp-monitor/blob/master/assets/screenshots/CDP%20display.png)
 
-[Alert Displayed](https://source.deco.network/sreenathtv/entry-hacksummit-MakerDAO/src/branch/master/assets/screenshots/Alert%20display.png)
+[Create Alert Dialog](https://github.com/sreenath/cdp-monitor/blob/master/assets/screenshots/Create%20Alert.png)
+
+[Alert Displayed](https://github.com/sreenath/cdp-monitor/blob/master/assets/screenshots/Alert%20display.png)
